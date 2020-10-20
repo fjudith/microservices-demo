@@ -18,7 +18,7 @@ spec:
     spec:
       containers:
       - name: carts
-        image: weaveworksdemos/carts:0.4.8
+        image: docker.io/fjudith/carts:0.5.0
         env:
          - name: ZIPKIN
            value: zipkin.jaeger.svc.cluster.local
