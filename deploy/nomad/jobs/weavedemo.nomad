@@ -246,7 +246,7 @@ job "weavedemo" {
       }
       
       env {
-        JAVA_OPTS = "-Xms64m -Xmx128m -XX:PermSize=32m -XX:MaxPermSize=64m -XX:+UseG1GC -Djava.security.egd=file:/dev/urandom"
+        JAVA_OPTS = "-Xms64m -Xmx128m -XX:+UseG1GC -Djava.security.egd=file:/dev/urandom"
       }
 
       resources {
@@ -312,7 +312,7 @@ job "weavedemo" {
       }
 
       env {
-        JAVA_OPTS = "-Xms64m -Xmx128m -XX:PermSize=32m -XX:MaxPermSize=64m -XX:+UseG1GC -Djava.security.egd=file:/dev/urandom"
+        JAVA_OPTS = "-Xms64m -Xmx128m -XX:+UseG1GC -Djava.security.egd=file:/dev/urandom"
       }
 
       resources {
@@ -393,7 +393,7 @@ job "weavedemo" {
       }
 
       env {
-        JAVA_OPTS = "-Xms64m -Xmx128m -XX:PermSize=32m -XX:MaxPermSize=64m -XX:+UseG1GC -Djava.security.egd=file:/dev/urandom"
+        JAVA_OPTS = "-Xms64m -Xmx128m -XX:+UseG1GC -Djava.security.egd=file:/dev/urandom"
       }
 
       resources {
