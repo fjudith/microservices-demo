@@ -78,7 +78,7 @@
     },
     "job::${NAMESPACE}::carts": {
       "docker": {
-        "image": "dynatracesockshop/carts:0.6.0"
+        "image": "docker.io/weaveworksdemos/carts:0.4.8"
       },
       "restart_mode": "yes",
       "state": "ready",
