@@ -50,7 +50,7 @@ services:
     networks:
       - external
   carts:
-    image: docker.io/fjudith/carts:0.7.1
+    image: docker.io/fjudith/carts:0.7.0
     hostname: carts
     dns: 172.17.0.1
     dns_search: weave.local

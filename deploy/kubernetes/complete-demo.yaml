@@ -74,7 +74,7 @@ spec:
     spec:
       containers:
       - name: carts
-        image: docker.io/fjudith/carts:0.7.1
+        image: docker.io/fjudith/carts:0.7.0
         ports:
          - containerPort: 80
         env:

@@ -78,7 +78,7 @@
     },
     "job::${NAMESPACE}::carts": {
       "docker": {
-        "image": "docker.io/fjudith/carts:0.7.1"
+        "image": "docker.io/fjudith/carts:0.7.0"
       },
       "restart_mode": "yes",
       "state": "ready",

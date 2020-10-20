@@ -18,7 +18,7 @@ spec:
     spec:
       containers:
       - name: carts
-        image: docker.io/fjudith/carts:0.7.1
+        image: docker.io/fjudith/carts:0.7.0
         env:
         #  - name: ZIPKIN
         #    value: zipkin.jaeger.svc.cluster.local
