@@ -16,4 +16,4 @@ spec:
     - sock-shop
   endpoints:
   - targetPort: 80
-    path: /metrics
+    path: /actuator/prometheus
