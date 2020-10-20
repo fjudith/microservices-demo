@@ -24,7 +24,7 @@ spec:
            value: zipkin.jaeger.svc.cluster.local
          - name: JAVA_OPTS
            value: -Xms64m -Xmx128m -XX:+UseG1GC -Djava.security.egd=file:/dev/urandom
-        command: ["/usr/local/bin/java.sh","-jar","./app.jar", "--port=80", "--debug"]
+        command: ["/usr/local/bin/java.sh","-jar","./app.jar", "--port=8080", "--debug"]
         resources:
           limits:
             cpu: 300m
@@ -33,7 +33,7 @@ spec:
             cpu: 300m
             memory: 500Mi
         ports:
-        - containerPort: 80
+        - containerPort: 8080
         securityContext:
           runAsNonRoot: true
           runAsUser: 10001
@@ -49,13 +49,13 @@ spec:
         livenessProbe:
           httpGet:
             path: /actuator/health/liveness
-            port: 80
+            port: 8080
           initialDelaySeconds: 300
           periodSeconds: 3
         readinessProbe:
           httpGet:
             path: /actuator/health/readiness
-            port: 80
+            port: 8080
           initialDelaySeconds: 180
           periodSeconds: 3
       volumes:
