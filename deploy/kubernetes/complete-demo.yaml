@@ -539,7 +539,7 @@ spec:
     spec:
       containers:
       - name: shipping
-        image: docker.io/weaveworksdemos/shipping:0.4.8
+        image: docker.io/fjudith/shipping:0.7.0
         env:
         #  - name: ZIPKIN
         #    value: zipkin.jaeger.svc.cluster.local

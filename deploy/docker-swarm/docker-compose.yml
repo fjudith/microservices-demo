@@ -37,7 +37,7 @@ services:
     environment:
       - reschedule=on-node-failure
   shipping:
-    image: docker.io/weaveworksdemos/shipping:0.4.8
+    image: docker.io/fjudith/shipping:0.7.0
     environment:
       - reschedule=on-node-failure
       - JAVA_OPTS=-Xms64m -Xmx128m -XX:+UseG1GC -Djava.security.egd=file:/dev/urandom -Dspring.zipkin.enabled=false

@@ -96,7 +96,7 @@ services:
     tmpfs:
       - /tmp:rw,noexec,nosuid
   shipping:
-    image: docker.io/weaveworksdemos/shipping:0.4.8
+    image: docker.io/fjudith/shipping:0.7.0
     hostname: shipping
     restart: always
     cap_drop:
