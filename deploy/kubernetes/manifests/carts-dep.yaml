@@ -18,13 +18,12 @@ spec:
     spec:
       containers:
       - name: carts
-        image: docker.io/fjudith/carts:0.7.2
+        image: docker.io/fjudith/carts:0.7.0
         env:
-         - name: ZIPKIN
-           value: zipkin.jaeger.svc.cluster.local
+        #  - name: ZIPKIN
+        #    value: zipkin.jaeger.svc.cluster.local
          - name: JAVA_OPTS
            value: -Xms64m -Xmx128m -XX:+UseG1GC -Djava.security.egd=file:/dev/urandom
-        command: ["/usr/local/bin/java.sh","-jar","./app.jar", "--port=8080", "--debug"]
         resources:
           limits:
             cpu: 300m
