@@ -12,7 +12,7 @@ services:
     ports:
       - '5601:5601'
   log-server:
-    image: weaveworksdemos/log-server
+    image: docker.io/weaveworksdemos/log-server
     hostname: log-server
     depends_on:
       - elasticsearch

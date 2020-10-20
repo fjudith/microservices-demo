@@ -18,7 +18,7 @@ spec:
     spec:
       serviceAccountName: fluentd
       containers:
-       - image: weaveworksdemos/log-server
+       - image: docker.io/weaveworksdemos/log-server
          name: fluentd
          env:
          - name: FLUENTD_CONF

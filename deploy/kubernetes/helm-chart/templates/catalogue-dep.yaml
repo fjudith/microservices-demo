@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
       - name: catalogue
-        image: weaveworksdemos/catalogue:0.3.5
+        image: docker.io/weaveworksdemos/catalogue:0.3.5
         {{- if .Values.zipkin.enabled }}
         env:
          - name: ZIPKIN
