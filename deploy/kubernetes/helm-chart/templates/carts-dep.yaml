@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
       - name: carts
-        image: weaveworksdemos/carts:0.4.8
+        image: dynatracesockshop/carts:0.6.0
         env:
          {{- if .Values.zipkin.enabled }}
          - name: ZIPKIN
