@@ -2,23 +2,23 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: carts
+  name: shipping
   labels:
-    app: carts
+    app: shipping
   namespace: sock-shop
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: carts
+      app: shipping
   template:
     metadata:
       labels:
-        app: carts
+        app: shipping
     spec:
       containers:
-      - name: carts
-        image: weaveworksdemos/carts:0.4.8
+      - name: shipping
+        image: docker.io/weaveworksdemos/shipping:0.4.8
         env:
          - name: ZIPKIN
            value: zipkin.jaeger.svc.cluster.local

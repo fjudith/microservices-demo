@@ -2,23 +2,23 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: carts
+  name: orders
   labels:
-    app: carts
+    app: orders
   namespace: sock-shop
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: carts
+      app: orders
   template:
     metadata:
       labels:
-        app: carts
+        app: orders
     spec:
       containers:
-      - name: carts
-        image: weaveworksdemos/carts:0.4.8
+      - name: orders
+        image: docker.io/weaveworksdemos/orders:0.4.7
         env:
          - name: ZIPKIN
            value: zipkin.jaeger.svc.cluster.local
@@ -26,10 +26,10 @@ spec:
            value: -Xms64m -Xmx128m -XX:+UseG1GC -Djava.security.egd=file:/dev/urandom
         resources:
           limits:
-            cpu: 300m
+            cpu: 500m
             memory: 500Mi
           requests:
-            cpu: 300m
+            cpu: 200m
             memory: 500Mi
         ports:
         - containerPort: 80

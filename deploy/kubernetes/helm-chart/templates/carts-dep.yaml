@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
       - name: carts
-        image: docker.io/fjudith/carts:0.5.0
+        image: weaveworksdemos/carts:0.4.8
         env:
          {{- if .Values.zipkin.enabled }}
          - name: ZIPKIN
