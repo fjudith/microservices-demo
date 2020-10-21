@@ -48,13 +48,13 @@ spec:
           name: tmp-volume
         livenessProbe:
           httpGet:
-            path: /actuator/health/liveness
+            path: /health
             port: 80
           initialDelaySeconds: 300
           periodSeconds: 3
         readinessProbe:
           httpGet:
-            path: /actuator/health/readiness
+            path: /health
             port: 80
           initialDelaySeconds: 180
           periodSeconds: 3
