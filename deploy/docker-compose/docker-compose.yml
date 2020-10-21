@@ -70,7 +70,7 @@ services:
     tmpfs:
       - /tmp:rw,noexec,nosuid
   orders:
-    image: docker.io/weaveworksdemos/orders:0.4.7
+    image: docker.io/fjudith/orders:0.7.0
     hostname: orders
     restart: always
     cap_drop:

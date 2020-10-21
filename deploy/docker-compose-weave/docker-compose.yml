@@ -71,7 +71,7 @@ services:
     networks:
       - internal
   orders:
-    image: docker.io/weaveworksdemos/orders:0.4.7
+    image: docker.io/fjudith/orders:0.7.0
     hostname: orders
     dns: 172.17.0.1
     dns_search: weave.local

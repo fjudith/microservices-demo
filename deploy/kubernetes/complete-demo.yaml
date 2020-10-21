@@ -337,7 +337,7 @@ spec:
     spec:
       containers:
       - name: orders
-        image: docker.io/weaveworksdemos/orders:0.4.7
+        image: docker.io/fjudith/orders:0.7.0
         env:
         #  - name: ZIPKIN
         #    value: zipkin.jaeger.svc.cluster.local
