@@ -49,13 +49,13 @@ spec:
           httpGet:
             path: /heatlh
             port: 80
-          initialDelaySeconds: 360
+          initialDelaySeconds: 420
           periodSeconds: 3
         readinessProbe:
           httpGet:
             path: /health
             port: 80
-          initialDelaySeconds: 300
+          initialDelaySeconds: 360
           periodSeconds: 3
       volumes:
         - name: tmp-volume
