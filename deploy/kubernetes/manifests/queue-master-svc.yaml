@@ -6,7 +6,7 @@ metadata:
   labels:
     app: queue-master
   annotations:
-    prometheus.io/path: "/prometheus"
+    prometheus.io/path: "/actuator/prometheus"
   namespace: sock-shop
 spec:
   ports:

@@ -19,6 +19,7 @@ spec:
       containers:
       - name: user
         image: docker.io/weaveworksdemos/user:0.4.7
+        imagePullPolicy: Always
         resources:
           limits:
             cpu: 300m

@@ -19,6 +19,7 @@ spec:
       containers:
       - name: shipping
         image: docker.io/fjudith/shipping:0.7.0
+        imagePullPolicy: Always
         env:
         #  - name: ZIPKIN
         #    value: zipkin.jaeger.svc.cluster.local

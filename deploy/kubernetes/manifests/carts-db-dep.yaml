@@ -19,6 +19,7 @@ spec:
       containers:
       - name: carts-db
         image: mongo
+        imagePullPolicy: Always
         ports:
         - name: mongo
           containerPort: 27017

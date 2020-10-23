@@ -1,0 +1,19 @@
+apiVersion: monitoring.coreos.com/v1
+kind: ServiceMonitor
+metadata:
+  name: queue-master
+  labels:
+    release: microservices-demo
+    app: queue-master
+  namespace: sock-shop
+spec:
+  jobLabel: queue-master-metrics
+  selector:
+    matchLabels:
+      app: queue-master
+  namespaceSelector:
+    matchNames:
+    - sock-shop
+  endpoints:
+  - targetPort: 80
+    path: /actuator/prometheus

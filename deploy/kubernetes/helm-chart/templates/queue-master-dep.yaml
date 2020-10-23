@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
       - name: queue-master
-        image: docker.io/weaveworksdemos/queue-master:0.3.1
+        image: docker.io/fjudith/queue-master:0.7.0
         env:
          {{- if .Values.zipkin.enabled }}
          - name: ZIPKIN

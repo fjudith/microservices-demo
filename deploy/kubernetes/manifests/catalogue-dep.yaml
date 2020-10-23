@@ -19,6 +19,7 @@ spec:
       containers:
       - name: catalogue
         image: docker.io/weaveworksdemos/catalogue:0.3.5
+        imagePullPolicy: Always
         command: ["/app"]
         args:
         - -port=80

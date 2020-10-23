@@ -105,7 +105,7 @@ services:
     networks:
       - backoffice
   queue-master:
-    image: docker.io/weaveworksdemos/queue-master:0.3.1
+    image: docker.io/fjudith/queue-master:0.7.0
     hostname: queue-master
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
